@@ -1,70 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Travel Photo Collection</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f0f0f0;
-      color: #333;
-    }
-    header {
-      background-color: #2c3e50;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-    h1 {
-      margin: 0;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-    footer {
-      background-color: #34495e;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer in the USA: A Growing Passion</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.7;
+            background-color: #eef2f7;
+            color: #333;
+        }
+        header {
+            background-color: #1a5276; /* Dark Blue */
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #2e86c1; /* Medium Blue */
+            padding: 0.8em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #d6eaf8; /* Lighter Blue */
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            color: #1a5276;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            border-left: 5px solid #2e86c1;
+            padding-left: 15px;
+            font-weight: 600;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.02);
+        }
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            background-color: #1a5276;
+            color: white;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+        }
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Soccer in the USA: A Growing Passion</h1>
+        <p>Exploring the rise of "the beautiful game" in America</p>
+    </header>
 
-  <header>
-    <h1>Travel Photo Collection</h1>
-    <p>Explore beautiful places around the world</p>
-  </header>
+    <nav>
+        <a href="#history">Brief History</a>
+        <a href="#leagues">Professional Leagues</a>
+        <a href="#national-teams">National Teams</a>
+        <a href="#youth">Youth Development</a>
+        <a href="#future">Future Outlook</a>
+    </nav>
 
-  <main class="gallery">
-    <img src="https://source.unsplash.com/featured/?beach" alt="Beach">
-    <img src="https://source.unsplash.com/featured/?mountains" alt="Mountains">
-    <img src="https://source.unsplash.com/featured/?city" alt="City">
-    <img src="https://source.unsplash.com/featured/?forest" alt="Forest">
-    <img src="https://source.unsplash.com/featured/?desert" alt="Desert">
-    <img src="https://source.unsplash.com/featured/?island" alt="Island">
-    <img src="https://source.unsplash.com/featured/?waterfall" alt="Waterfall">
-    <img src="https://source.unsplash.com/featured/?sunset" alt="Sunset">
-  </main>
+    <div class="container">
+        <section id="history">
+            <h2>A Brief History of Soccer in America</h2>
+            <p>While often overshadowed by American football, basketball, and baseball, soccer (or football, as it's known globally) has a long and fascinating history in the United States. Its roots trace back to the late 19th century, with various leagues forming and dissolving over the decades.</p>
+            <p>The sport saw significant boosts with the arrival of international stars like Pelé in the North American Soccer League (NASL) in the 1970s. However, it was the hosting of the 1994 FIFA World Cup that truly reignited interest and laid the groundwork for modern professional leagues and a surge in youth participation.</p>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/900x500?text=Historic+Soccer+Match+USA" alt="Historic soccer match in the USA">
+                <p class="caption">A historical photo showing an early soccer match in the United States, showcasing the sport's long presence.</p>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Travel Photo Collection. All rights reserved.</p>
-  </footer>
+        <section id="leagues">
+            <h2>Professional Soccer Leagues</h2>
+            <p>The modern era of professional soccer in the US is largely defined by Major League Soccer (MLS) and the National Women's Soccer League (NWSL).</p>
+            <ul>
+                <li><strong>Major League Soccer (MLS):</strong> Founded in 1993 as a condition of hosting the 1994 World Cup, MLS has grown from 10 teams to over 29 today. It has steadily gained popularity, attracting international stars and developing homegrown talent. The league's focus on stadium development and a passionate fanbase has contributed to its success.</li>
+                <li><strong>National Women's Soccer League (NWSL):</strong> The premier professional women's soccer league in the US, the NWSL features many of the world's top female players, including stars from the US Women's National Team. It has gained significant traction, especially after the USWNT's World Cup victories.</li>
+                <li>Beyond these, numerous lower-tier professional leagues like the USL Championship and MLS NEXT Pro provide pathways for players and extend the reach of professional soccer across the country.</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/900x500?text=MLS+Match+Stadium" alt="MLS match in a packed stadium">
+                <p class="caption">An MLS match in a modern stadium, illustrating the growing attendance and vibrant atmosphere.</p>
+            </div>
+        </section>
 
+        <section id="national-teams">
+            <h2>US National Soccer Teams</h2>
+            <p>Both the Men's and Women's National Teams have played crucial roles in elevating soccer's profile in the US and globally.</p>
+            <ul>
+                <li><strong>US Men's National Team (USMNT):</strong> The USMNT has regularly qualified for the FIFA World Cup and has shown progress on the international stage, with many players now competing in top European leagues. Their performances often spark national interest in the sport.</li>
+                <li><strong>US Women's National Team (USWNT):</strong> The USWNT is one of the most successful national teams in women's soccer history, boasting multiple FIFA Women's World Cup titles and Olympic gold medals. Their dominance and advocacy for gender equality have made them global icons and inspirations.</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/900x500?text=USWNT+Celebration" alt="US Women's National Team celebrating a goal">
+                <p class="caption">The US Women's National Team celebrating a goal, showcasing their success and impact.</p>
+            </div>
+        </section>
+
+        <section id="youth">
+            <h2>Youth Soccer Development</h2>
+            <p>The foundation of soccer's growth in the US lies in its massive youth participation. Millions of children play soccer annually, making it one of the most popular youth sports.</p>
+            <p>This extensive grassroots involvement feeds into various levels of development, from recreational leagues to competitive club soccer, high school teams, and collegiate programs (NCAA). Initiatives like MLS NEXT and the Girls Academy are further professionalizing youth development, aiming to produce more elite players for domestic leagues and national teams.</p>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/900x500?text=Youth+Soccer+Game+USA" alt="Youth soccer game in the USA">
+                <p class="caption">Children playing soccer in a youth league, highlighting the widespread participation at grassroots levels.</p>
+            </div>
+        </section>
+
+        <section id="future">
+            <h2>The Future of Soccer in the USA</h2>
+            <p>The outlook for soccer in the United States is overwhelmingly positive. Key factors contributing to its continued growth include:</p>
+            <ul>
+                <li><strong>Co-hosting the 2026 FIFA World Cup:</strong> This event is expected to be a monumental catalyst, bringing unprecedented global attention and investment to the sport in North America.</li>
+                <li><strong>Growing Fanbase:</strong> MLS attendance continues to rise, and viewership for international leagues (like the English Premier League and UEFA Champions League) is significant.</li>
+                <li><strong>Increased Investment:</strong> More money is being poured into player development, infrastructure, and marketing.</li>
+                <li><strong>Demographic Shifts:</strong> A growing Hispanic population, deeply passionate about soccer, further bolsters the fanbase.</li>
+            </ul>
+            <p>Soccer is no longer a niche sport in America; it's a rapidly expanding cultural phenomenon with a bright future.</p>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/900x500?text=2026+World+Cup+Logo" alt="2026 FIFA World Cup Logo">
+                <p class="caption">The official logo for the 2026 FIFA World Cup, set to be co-hosted by the USA, Canada, and Mexico.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Soccer in the USA. All rights reserved.</p>
+    </footer>
 </body>
 </html>
